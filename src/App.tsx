@@ -6,6 +6,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronLeft } from "lucide-react";
+import LunarLander from "./LunarLander";
 
 const SECTIONS = [
   {
@@ -44,10 +45,16 @@ const SECTIONS = [
     description: "Dünya ve Ay'ın gerçek boyutlarını interaktif bir şekilde keşfet.",
     image: "https://picsum.photos/seed/moon-comparison/800/1200",
   },
+  {
+    id: 7,
+    title: "Görev: Ay'a İniş",
+    description: "Ay modülünü güvenli bir şekilde yüzeye indirin.",
+    image: "https://picsum.photos/seed/moon-lander/800/1200",
+  },
 ];
 
 export default function App() {
-  const [view, setView] = useState<"landing" | "adventure">("landing");
+  const [view, setView] = useState<"landing" | "adventure" | "game">("landing");
 
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-black text-white font-sans">
@@ -133,7 +140,7 @@ export default function App() {
             {/* Vignette Effect */}
             <div className="pointer-events-none absolute inset-0 bg-radial-[circle_at_center,_transparent_0%,_black_90%]" />
           </motion.div>
-        ) : (
+        ) : view === "adventure" ? (
           <motion.div
             key="adventure"
             initial={{ opacity: 0, y: 50 }}
@@ -164,6 +171,9 @@ export default function App() {
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 + 0.5 }}
+                  onClick={() => {
+                    if (section.id === 7) setView("game");
+                  }}
                   className="relative flex-1 group overflow-hidden border-r border-white/5 last:border-r-0 cursor-pointer transition-all duration-700 hover:flex-[1.5]"
                 >
                   {/* Background Image (at bottom) */}
@@ -202,6 +212,17 @@ export default function App() {
                 </motion.div>
               ))}
             </div>
+          </motion.div>
+        ) : (
+          <motion.div
+            key="game"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            className="h-full w-full"
+          >
+            <LunarLander onExit={() => setView("adventure")} />
           </motion.div>
         )}
       </AnimatePresence>
