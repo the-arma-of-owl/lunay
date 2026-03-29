@@ -128,8 +128,8 @@ export default function App() {
   const [view, setView] = useState<ViewType>("landing");
   const [activeCategoryId, setActiveCategoryId] = useState<number | null>(null);
 
-  const activeItems = activeCategoryId === null 
-    ? CATEGORIES 
+  const activeItems = activeCategoryId === null
+    ? CATEGORIES
     : SECTIONS.filter(section => section.categoryId === activeCategoryId);
 
   return (
@@ -160,6 +160,21 @@ export default function App() {
 
             {/* Overlay Content */}
             <div className="relative z-10 flex h-full flex-col items-center justify-between py-12 px-6">
+
+              {/* BYT Logo — top left, Instagram link */}
+              <a
+                href="https://www.instagram.com/bytfirat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-6 left-6 z-20 hover:opacity-100 transition-opacity"
+              >
+                <img
+                  src="/byt_logo.png"
+                  alt="BYT Logo"
+                  className="h-20 md:h-32 object-contain opacity-90 hover:opacity-100 drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)] transition-transform hover:scale-105"
+                />
+              </a>
+
               {/* Top Header: Logo Image */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -167,9 +182,9 @@ export default function App() {
                 transition={{ duration: 1.5, ease: "easeOut" }}
                 className="text-center"
               >
-                <img 
-                  src="https://i.ibb.co/nsm920N9/backgraound.png" 
-                  alt="LunAy Logo" 
+                <img
+                  src="https://i.ibb.co/nsm920N9/backgraound.png"
+                  alt="LunAy Logo"
                   className="h-56 md:h-96 object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.5)]"
                   referrerPolicy="no-referrer"
                 />
@@ -185,10 +200,10 @@ export default function App() {
                 <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(255, 255, 255, 0.4)" }}
                   whileTap={{ scale: 0.95 }}
-                  animate={{ 
-                    boxShadow: ["0 0 10px rgba(255,255,255,0.1)", "0 0 20px rgba(255,255,255,0.2)", "0 0 10px rgba(255,255,255,0.1)"] 
+                  animate={{
+                    boxShadow: ["0 0 10px rgba(255,255,255,0.1)", "0 0 20px rgba(255,255,255,0.2)", "0 0 10px rgba(255,255,255,0.1)"]
                   }}
-                  transition={{ 
+                  transition={{
                     boxShadow: { duration: 3, repeat: Infinity, ease: "easeInOut" }
                   }}
                   className="px-10 py-4 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 text-lg md:text-xl font-light tracking-[0.2em] uppercase transition-colors hover:bg-white/20"
@@ -227,7 +242,7 @@ export default function App() {
           >
             {/* Header with Back Button */}
             <div className="absolute top-0 left-0 right-0 z-50 p-8 flex items-center justify-between bg-gradient-to-b from-black/80 to-transparent">
-              <button 
+              <button
                 onClick={() => {
                   if (activeCategoryId !== null) {
                     setActiveCategoryId(null);
@@ -240,9 +255,9 @@ export default function App() {
                 <ChevronLeft className="w-6 h-6 transition-transform group-hover:-translate-x-1" />
                 <span className="text-sm uppercase tracking-widest">{activeCategoryId !== null ? 'Kategoriler' : 'Ana Menü'}</span>
               </button>
-              <img 
-                src="https://i.ibb.co/nsm920N9/backgraound.png" 
-                alt="LunAy Logo" 
+              <img
+                src="https://i.ibb.co/nsm920N9/backgraound.png"
+                alt="LunAy Logo"
                 className="h-20 md:h-24 object-contain opacity-90 drop-shadow-md origin-right"
                 referrerPolicy="no-referrer"
               />
@@ -277,8 +292,8 @@ export default function App() {
                 >
                   {/* Background Image (at bottom) */}
                   <div className="absolute inset-0 z-0">
-                    <img 
-                      src={item.image} 
+                    <img
+                      src={item.image}
                       alt={item.title}
                       className="h-full w-full object-cover opacity-30 grayscale transition-all duration-700 group-hover:opacity-60 group-hover:grayscale-0 group-hover:scale-110"
                       referrerPolicy="no-referrer"
