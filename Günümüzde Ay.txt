@@ -1,0 +1,59 @@
+2020 - 2026+
+
+Modern Çağ (Artemis/Chang'e)
+
+1. NASA - Artemis Programı: "Yeniden ve Kalıcı Olarak"
+
+Artemis, 1972'den beri Ay'a gitmeyen insanlığı bu kez kalıcı olarak oraya yerleştirmeyi hedefleyen devasa bir uluslararası projedir.
+
+Artemis I (2022): Mürettebatsız Orion kapsülü Ay yörüngesine gidip başarıyla döndü. Bu, sistemin güvenilirliğini kanıtladı.
+
+Artemis II (Planlanan 2025/2026): Ay yörüngesine gidecek olan ilk insanlı görev olacak. Mürettebat arasında ilk kez bir kadın ve bir siyahi astronot yer alıyor.
+
+Gateway (Ay Geçidi): Ay yörüngesinde kurulacak olan küçük bir uzay istasyonudur. Astronotlar Dünya'dan buraya gelecek, buradan Ay yüzeyine inecekler.
+
+Hedef: Ay'ın Güney Kutbu'nda su buzu aramak ve kalıcı bir Ay üssü kurmak.
+
+2. Çin - Chang’e ve ILRS Projesi
+
+Çin, son 10 yılda Ay konusunda en istikrarlı ve başarılı adımları atan ülke oldu.
+
+Chang’e 4 (2019): Ay'ın karanlık yüzüne (South Pole-Aitken havzası) iniş yapan tarihteki ilk araç oldu.
+
+Chang’e 5 (2020): 40 yıl aradan sonra Ay'dan Dünya'ya fiziksel taş ve toprak örneği getirdi.
+
+Chang’e 6 (2024): Ay'ın karanlık yüzünden örnek getiren ilk görev olarak tarihe geçti.
+
+ILRS (Uluslararası Ay Araştırma İstasyonu): Çin ve Rusya, 2030'larda Ay yüzeyinde ortak bir robotik/insanlı istasyon kurmak için iş birliği yapıyor.
+
+3. Hindistan ve Japonya: Yeni Oyuncuların Başarısı
+
+Chandrayaan-3 (Hindistan - 2023): Hindistan, Ay'ın zorlu Güney Kutbu bölgesine yakın bir yere yumuşak iniş yapan ilk ülke oldu. Bu, düşük maliyetli ama yüksek teknolojili uzay görevleri için bir devrim niteliğindedir.
+
+SLIM (Japonya - 2024): "Ay Keskin Nişancısı" lakaplı bu araç, hedeflenen noktaya sadece 100 metre hassasiyetle inerek tarihin en isabetli inişini gerçekleştirdi.
+
+4. Ticari Uzay Yarışı (SpaceX ve Diğerleri)
+
+Artık Ay'a sadece devletler değil, şirketler de gidiyor.
+
+Starship (SpaceX): NASA, Artemis III göreviyle insanları Ay yüzeyine indirmek için SpaceX'in devasa Starship roketini "Ay Kondusu" olarak seçti.
+
+Ticari Ay Yükü Servisleri (CLPS): Intuitive Machines (Odysseus aracı) gibi özel şirketler, NASA adına Ay'a kargo ve bilimsel cihaz taşımaya başladı.
+
+5. Neden Şimdi? Ay'daki Kritik Kaynaklar
+
+Güncel çalışmaların ana motivasyonu iki temel kaynağa dayanıyor:
+
+Su Buzu: Ay'ın karanlık kraterlerinde bulunan su, içme suyu sağlamanın yanı sıra hidrojen ve oksijene ayrıştırılarak roket yakıtı üretimi için kullanılacak.
+
+Helyum-3: Dünya'da çok nadir olan bu izotop, gelecekte temiz nükleer füzyon enerjisi için kilit bir yakıt olarak görülüyor.
+
+NASA Artemis Official Page: nasa.gov/specials/artemis
+
+CNSA (China National Space Administration) Updates: Chang'e görev dökümleri.
+
+ISRO (Indian Space Research Organisation): Chandrayaan-3 görev raporları.
+
+The Planetary Society: Gezegen bilimindeki en son bültenler.
+
+Space.com / NASA News: Günlük uzay haberleri ve fırlatma takvimleri.
