@@ -7,6 +7,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronLeft } from "lucide-react";
 import LunarLander from "./LunarLander";
+import ComparisonGame from "./ComparisonGame";
 
 const SECTIONS = [
   {
@@ -54,7 +55,7 @@ const SECTIONS = [
 ];
 
 export default function App() {
-  const [view, setView] = useState<"landing" | "adventure" | "game">("landing");
+  const [view, setView] = useState<"landing" | "adventure" | "game" | "comparison">("landing");
 
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-black text-white font-sans">
@@ -172,6 +173,7 @@ export default function App() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 + 0.5 }}
                   onClick={() => {
+                    if (section.id === 6) setView("comparison");
                     if (section.id === 7) setView("game");
                   }}
                   className="relative flex-1 group overflow-hidden border-r border-white/5 last:border-r-0 cursor-pointer transition-all duration-700 hover:flex-[1.5]"
@@ -212,6 +214,17 @@ export default function App() {
                 </motion.div>
               ))}
             </div>
+          </motion.div>
+        ) : view === "comparison" ? (
+          <motion.div
+            key="comparison"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            className="h-full w-full"
+          >
+            <ComparisonGame onExit={() => setView("adventure")} />
           </motion.div>
         ) : (
           <motion.div
