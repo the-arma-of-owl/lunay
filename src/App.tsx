@@ -146,16 +146,15 @@ export default function App() {
           >
             {/* Background Video */}
             <div className="absolute inset-0 h-full w-full overflow-hidden">
-              <iframe
-                src="https://streamable.com/e/olhcxz?autoplay=1&muted=1&loop=1&controls=0"
-                frameBorder="0"
-                width="100%"
-                height="100%"
-                allowFullScreen
-                allow="autoplay"
-                className="absolute inset-0 h-full w-full scale-[1.8] translate-y-[45%] object-cover opacity-85 pointer-events-none"
-                style={{ border: 'none' }}
-              />
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 h-full w-full object-cover opacity-85 pointer-events-none"
+              >
+                <source src="/lunay-bg.mp4" type="video/mp4" />
+              </video>
             </div>
 
             {/* Overlay Content */}
