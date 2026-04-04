@@ -154,6 +154,7 @@ export default function App() {
                 className="absolute inset-0 h-full w-full object-cover opacity-85 pointer-events-none"
               >
                 <source src="/lunay-bg.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
             </div>
 
